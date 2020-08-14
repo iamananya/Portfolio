@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  scroll-behavior: smooth;
+}
+body {
+  background: #4181e0;
+}
+
+.center {
+  position: relative;
+  padding: 100px;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 100vh;
+  align-items: center;
+}
+.page {
+  position: relative;
+  padding: 100px;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+section .logo {
+  position: absolute;
+  top: 30px;
+  color: #fff;
+  font-weight: 500;
+  font-family: Ruthie;
+  font-size: 40px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+section .bg {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 50%;
+
+  height: 90%;
+}
+
+section .content {
+  position: relative;
+  max-width: 650px;
+  z-index: 1;
+}
+section .content h2 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+section .content p {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0 10px;
+  width: 70%;
+}
+section .content p span {
+  font-family: Ruthie;
+  color: #fff;
+  font-size: 30px;
+}
+section .content a {
+  color: #fff;
+  background: #e6da3c;
+
+  font-size: 1em;
+  margin: 20px 0;
+  font-weight: 500;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+}
+.about-text {
+  padding-top: 20px;
+  font-family: Poppins;
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  margin-left: 10px;
+  position: relative;
+  top: 3%;
+  left: 2%;
+}
+.about-text a {
+  color: #fff;
+  background: #e6da3c;
+
+  font-size: 1em;
+  margin: 20px 0;
+  font-weight: 500;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+section .about h2 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+.about-image {
+  padding-top: 30px;
+}
+.achieve h2 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.1em;
+  position: relative;
+}
+.achievement-content .card {
+  /* Add shadows to create the "card" effect */
+  margin-top: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.achievement-content .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.achievement-content .container {
+  padding: 2px 16px;
+  font-size: 20px;
+}
+.achievement-content .container a {
+  color: #fff;
+  background: #e6da3c;
+
+  font-size: 1em;
+  margin: 20px 0;
+  font-weight: 500;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+.container .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #e6da3c;
+  z-index: 1000;
+  background-color: #4181e0;
+  width: 500px;
+  max-width: 80%;
+}
+.container .modal .active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.container .modal .modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(110, 110, 110);
+  border-width: 80%;
+}
+.container .modal .modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.container .modal .modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.container .modal .modal-body {
+  padding: 10px 15px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 200ms ease-in-out;
+  background-color: (rgba(230, 218, 60, 0.5));
+  pointer-events: none;
+}
+#overlay .active {
+  opacity: 1;
+
+  pointer-events: all;
+}
+.copyrightText {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-size: 1.1em;
+  margin: 20px 0 10px;
+}
+.menuToggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #e6da3c url(./img/menu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.menuToggle.active {
+  background: #e6da3c url(./img/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+
+  left: calc(100% - 60px);
+  width: 50%;
+  height: 100%;
+  background: #e6da3c;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.navigation.active {
+  left: 50vw;
+}
+.navigation ul {
+  position: relative;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+.navigation ul li a {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.navigation ul li a:hover {
+  color: #4181e0;
+}
+
+.socialBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  font-size: 20px;
+
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialBar ul {
+  position: relative;
+}
+.socialBar ul li {
+  position: relative;
+  list-style: none;
+}
+.socialBar ul li:hover {
+  color: #4181e0;
+}
+@media screen and (max-width: 767px) {
+  section {
+    padding: 100px 40px;
+  }
+  section .content h2 {
+    margin-top: 80vh;
+    font-size: 2.5rem;
+    color: rgb(68, 65, 65);
+  }
+  section .bg {
+    width: 100%;
+  }
+  section .logo {
+    color: #000;
+  }
+  section .content p {
+    color: rgb(68, 65, 65);
+    width: 100%;
+  }
+  section .content p span {
+    color: #e6da3c;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .navigation {
+    left: 100%;
+  }
+}

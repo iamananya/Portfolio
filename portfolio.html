@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <title>Landing</title>
+  </head>
+  <body>
+    <section class="center">
+      <div class="logo">Ananya Mahato</div>
+      <img src="./img/s3.png" class="bg" />
+      <div class="content">
+        <h2>Hey There<br />Nice to meet you</h2>
+        <p>
+          This is <span>Ananya Mahato</span>, <br />I am a coding and Open
+          Source Enthusiast <br />Presently a Sophomore at <br />IIT Kharagpur
+        </p>
+        <a href="#">Contact Me</a>
+      </div>
+      <p class="copyrightText">&copy 2020 Ananya Mahato</p>
+    </section>
+    <section class="center">
+      <div class="about" id="about">
+        <h2>Discover Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="img/code.jpg" />
+          </div>
+          <div class="about-text">
+            <p>
+              I am a coding enthusiast .Love so solve complex and difficult
+              seeming problems and finding there solutions<br />
+              Meanwhile Scrathing my head for solutions :)
+              <br />
+              I love to contribute in open source projects and get excited to
+              see my github contribution table turn green each day<br />
+              Other than that cooking and Singing are my favourite
+              passtimes.Want to be a singer some day;)<br />
+              Usually found alone or sometimes with animals roaming in my
+              garden.
+              <br />Want to do someting great in life and serve the society.
+            </p>
+            <a href="#">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page">
+      <div class="achieve">
+        <h2>My Achievements</h2>
+        <div class="achievement-content">
+          <div class="card">
+            <img
+              src="./img/udaan.jpg
+            "
+              alt="Avatar"
+              style="width: 100%;"
+            />
+            <div class="container">
+              <h4><b>Udaan Scholarship</b></h4>
+              <p>Govt.of India</p>
+              <a data-modal-target="#modal" href="#">Know More</a>
+              <div class="modal active">
+                <div class="modal-header">
+                  <div class="title">
+                    Udaan Scholarship
+                  </div>
+                  <button data-cloe-button class="close-button">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  ipsam quia ducimus earum ipsa reiciendis omnis vitae fugiat
+                  pariatur, exercitationem magni eveniet, dignissimos aperiam
+                  recusandae error nulla similique nihil ipsum. Officia nisi
+                  eius maxime, dolorum ad quod fuga libero dolore laboriosam
+                  odit accusantium tempora animi repellendus ducimus placeat,
+                  saepe asperiores eos, quos numquam autem molestiae quo. Nulla
+                  doloribus iure optio commodi temporibus, totam debitis dolor
+                  repudiandae illo modi nobis autem ex? Est ex eos veniam at
+                  ipsum ipsam deleniti eum.
+                </div>
+              </div>
+              <div class="active" id="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation" onclick="toggleMenu();">
+      <ul>
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">My Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="socialBar">
+        <ul>
+          <li>
+            <i class="fa fa-facebook"><a href="#"></a></i>
+          </li>
+          <li>
+            <i class="fa fa-twitter"><a href="#"></a></i>
+          </li>
+          <li>
+            <i class="fa fa-linkedin"><a href="#"></a></i>
+          </li>
+          <li>
+            <i class="fa fa-github"><a href="#"></a></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".menuToggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
